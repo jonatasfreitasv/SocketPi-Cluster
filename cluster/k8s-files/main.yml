@@ -1,0 +1,36 @@
+- name: Reset Kubernetes installation
+  shell: "kubeadm reset"
+
+- name: Disable swap
+  shell: "sudo swapoff --all"
+
+- name: Initialize Kubernetes cluster for ARM with flannel support
+  shell: "kubeadm init --token {{token}} --pod-network-cidr={{cidr}} --token-ttl 0"
+
+- name: Delete old .kube folder
+  shell: "rm -rf ~/.kube"
+  ignore_error: yes
+
+- name: Create .kube folder
+  shell: "mkdir ~/.kube"
+
+- name: Copy default Cluster Configuration file
+  shell: "cp /etc/kubernetes/admin.conf ~/.kube/config"
+
+- name: Set permisson to config file
+  shell: "chown $(id -u):$(id -g) ~/.kube/config"
+
+- name: Install Networking Pods (flannel-rbac)
+  shell: "curl -sSL https://rawgit.com/coreos/flannel/v0.7.1/Documentation/kube-flannel-rbac.yml | kubectl create -f -"
+  register: out
+
+- debug: var=out.stdout_lines
+
+- name: Install Networking Pods (kube-flannel)
+  shell: "curl -sSL https://rawgit.com/coreos/flannel/v0.7.1/Documentation/kube-flannel.yml | sed 's/amd64/arm/g' | kubectl create -f -"
+  register: out
+
+- name: Install Traefik
+  shell: "kubectl apply -f https://raw.githubusercontent.com/containous/traefik/master/examples/k8s/traefik-ds.yaml"
+
+- debug: var=out.stdout_lines

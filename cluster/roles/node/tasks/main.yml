@@ -1,0 +1,12 @@
+- name: Reset Kubernetes installation
+  shell: "kubeadm reset"
+
+- name: Disable swap
+  shell: "sudo swapoff --all"
+
+- name: Adding node to cluster
+  script: files/join.sh {{token}} {{master}}
+
+  register: out
+
+- debug: var=out.stdout_lines

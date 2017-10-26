@@ -1,0 +1,14 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: example-app-ingress
+  namespace: default
+spec:
+  rules:
+    - host: pi.cluster.net
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: example-app
+              servicePort: 80

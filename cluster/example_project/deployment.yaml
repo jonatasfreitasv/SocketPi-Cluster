@@ -1,0 +1,67 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: hello-node
+  namespace: default
+spec:
+  replicas: 3
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  minReadySeconds: 3
+  template:
+    metadata:
+      labels:
+        app: hello-node
+    spec:
+      hostname: hello
+      subdomain: hello-node
+      containers:
+      - name: hello-node
+        image: jonatasfreitasv/hello-node
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+        lifecycle:
+          preStop:
+            exec:
+              command: ["sleep", "1"]
+        readinessProbe:
+          httpGet:
+            scheme: HTTP
+            path: /
+            port: 80
+          initialDelaySeconds: 5
+          periodSeconds: 3
+          timeoutSeconds: 10
+          successThreshold: 1
+          failureThreshold: 3
+        livenessProbe:
+          httpGet:
+            scheme: HTTP
+            path: /
+            port: 80
+          initialDelaySeconds: 5
+          periodSeconds: 3
+          timeoutSeconds: 10
+          successThreshold: 1
+          failureThreshold: 3
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-node
+  namespace: default
+  labels:
+    app: hello-node
+spec:
+  type: NodePort
+  selector:
+    app: hello-node
+  ports:
+    - name: http
+      port: 80
+      protocol: TCP
+      targetPort: 80

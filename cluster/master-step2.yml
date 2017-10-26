@@ -1,0 +1,10 @@
+- name: Kubernetes Step 2 - Kubernetes Dashboard (Waiting Flannel Pod is Running)
+  hosts: master
+  gather_facts: yes
+  remote_user: pi
+  become: true
+  vars_files:
+    - config.yml
+
+  roles:
+  - dashboard

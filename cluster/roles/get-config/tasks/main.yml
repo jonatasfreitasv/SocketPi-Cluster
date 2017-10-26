@@ -1,0 +1,2 @@
+- name: Download cluster configuration to admin.conf
+  fetch: src=/etc/kubernetes/admin.conf dest=./admin.conf
