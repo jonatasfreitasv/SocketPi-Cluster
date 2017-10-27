@@ -1,2 +1,0 @@
-- name: Install Kubernetes Dashboard
-  shell: "curl -sSL 'https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/recommended/kubernetes-dashboard-arm.yaml' | kubectl create -f -"

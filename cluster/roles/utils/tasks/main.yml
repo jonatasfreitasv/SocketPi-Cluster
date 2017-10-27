@@ -1,0 +1,26 @@
+- name: Create Heapster Controller
+  shell: "curl -sSL https://raw.githubusercontent.com/kubernetes/heapster/master/deploy/kube-config/standalone/heapster-controller.yaml | sed 's/amd64/arm/g' | kubectl apply -f -"
+
+- name: Create Heapster RBAC
+  shell: "kubectl create -f https://raw.githubusercontent.com/kubernetes/heapster/master/deploy/kube-config/rbac/heapster-rbac.yaml"
+
+- name: Create Traefik DS
+  shell: "kubectl apply -f https://raw.githubusercontent.com/containous/traefik/master/examples/k8s/traefik-ds.yaml"
+
+- name: Create Traefik RBAC
+  shell: "kubectl apply -f https://raw.githubusercontent.com/containous/traefik/master/examples/k8s/traefik-rbac.yaml"
+
+- name: Create Traefik UI
+  shell: "kubectl apply -f https://raw.githubusercontent.com/containous/traefik/master/examples/k8s/ui.yaml"
+
+- name: Create Kubernetes Dashboard
+  shell: "kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/recommended/kubernetes-dashboard-arm.yaml"
+
+- name: Create Kubernets Dashboard Role Binding to Master
+  - copy:
+    src: files/dashboard-admin.yaml
+    dest: ./dashboard-admin.yaml
+  shell: "kubectl create -f dashboard-admin.yaml"
+
+- name: Create Kubernetes Dashboard Role Binding
+  shell: "kubectl create -f dashboard-admin.yaml && rm dashboard-admin.yaml -y"

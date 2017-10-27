@@ -1,4 +1,4 @@
-- name: Kubernetes Step 2 - Kubernetes Dashboard (Waiting Flannel Pod is Running)
+- name: Kubernetes Step 2 - Create Kubernetes utils (Waiting Flannel and kube-dns Pod is Running)
   hosts: master
   gather_facts: yes
   remote_user: pi
@@ -7,4 +7,4 @@
     - config.yml
 
   roles:
-  - dashboard
+  - utils
