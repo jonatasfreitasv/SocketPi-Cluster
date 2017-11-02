@@ -1,0 +1,6 @@
+- name: Reset IPTables
+  script: files/reset-iptables.sh
+
+  register: out
+
+- debug: var=out.stdout_lines

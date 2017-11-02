@@ -30,6 +30,8 @@
   shell: "curl -sSL https://rawgit.com/coreos/flannel/v0.7.1/Documentation/kube-flannel.yml | sed 's/amd64/arm/g' | kubectl create -f -"
   register: out
 
+- debug: var=out.stdout_lines
+
 - name: Install Traefik
   shell: "kubectl apply -f https://raw.githubusercontent.com/containous/traefik/master/examples/k8s/traefik-ds.yaml"
 

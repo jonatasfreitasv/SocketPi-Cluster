@@ -1,4 +1,4 @@
-- name: Kubernetes master configuration
+- name: Kubernetes get configuration file
   hosts: master
   gather_facts: yes
   remote_user: pi

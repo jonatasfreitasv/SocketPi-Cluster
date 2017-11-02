@@ -1,0 +1,11 @@
+[pis]
+master.cluster.local name=master.cluster.local
+node1.cluster.local name=node1.cluster.local
+node2.cluster.local name=node2.cluster.local
+
+[master]
+master.cluster.local
+
+[nodes]
+node1.cluster.local
+node2.cluster.local

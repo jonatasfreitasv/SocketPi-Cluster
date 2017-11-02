@@ -1,0 +1,34 @@
+- name: Reset Kubernetes
+  shell: 'kubeadm reset'
+
+- name: Delete all stoped containers
+  shell: 'docker rm $(docker ps -aq)'
+  ignore_errors: yes
+
+- name: Delete all images
+  shell: 'docker rmi $(docker images -q)'
+  ignore_errors: yes
+
+- name: Reset data in etcd
+  shell: 'etcdctl rm --recursive registry'
+  ignore_errors: yes
+
+- name: Remove cni
+  shell: 'rm -rf /var/lib/cni'
+  ignore_errors: yes
+
+- name: Remove cni config
+  shell: 'rm -rf /etc/cni'
+  ignore_errors: yes
+
+- name: Remove cni network
+  shell: 'ifconfig cni0 down'
+  ignore_errors: yes
+
+- name: Clear cni controller
+  shell: 'brctl delbr cni0'
+  ignore_errors: yes
+
+- name: Remove flannel
+  shell: 'rm -rf /run/flannel'
+  ignore_errors: yes

@@ -12,6 +12,7 @@
   "dependencies": {
     "dotenv": "^4.0.0",
     "figlet": "^1.2.0",
+    "restify": "^6.2.3",
     "socket.io": "^2.0.3",
     "socket.io-client": "^2.0.3",
     "statsd-client": "^0.4.0"

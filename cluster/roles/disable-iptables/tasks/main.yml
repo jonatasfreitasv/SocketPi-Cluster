@@ -1,6 +1,0 @@
-- name: Adding node to cluster
-  script: files/join.sh {{token}} {{master}}
-
-  register: out
-
-- debug: var=out.stdout_lines

@@ -1,10 +1,10 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: hello-node
+  name: socketio-server
   namespace: default
 spec:
-  replicas: 3
+  replicas: 2
   strategy:
     type: RollingUpdate
     rollingUpdate:
@@ -14,15 +14,15 @@ spec:
   template:
     metadata:
       labels:
-        k8s-app: hello-node
-        name: hello-node
+        k8s-app: socketio-server
+        name: socketio-server
     spec:
-      hostname: hello-node
-      subdomain: hello-node
+      hostname: socketio-server
+      subdomain: socketio-server
       hostNetwork: true
       containers:
-      - name: hello-node
-        image: jonatasfreitasv/hello-node
+      - name: socketio-server
+        image: jonatasfreitasv/socketio-server
         imagePullPolicy: Always
         ports:
         - name: http
@@ -56,27 +56,28 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: hello-node
+  name: socketio-server
   namespace: default
 spec:
   selector:
-    k8s-app: hello-node
+    k8s-app: socketio-server
   ports:
-  - name: web
+  - name: websocket
     port: 5000
     targetPort: 5000
 ---
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: hello-node
-  namespace: default
+  name: socketio-server
+  annotations:
+    nginx.org/websocket-services: "ws-svc"
 spec:
   rules:
-  - host: hello.node
+  - host: socketio.server
     http:
       paths:
-      - path: /
+      - path: /socketio-server
         backend:
-          serviceName: hello-node
-          servicePort: web
+          serviceName: socketio-server
+          servicePort: 5000

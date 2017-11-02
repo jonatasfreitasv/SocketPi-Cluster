@@ -1,0 +1,4 @@
+# You timezone
+timezone: "America/Sao_Paulo"
+arch: arm
+id_rsa_pub: "/Users/anon/.ssh/id_rsa.pub"

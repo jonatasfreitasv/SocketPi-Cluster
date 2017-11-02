@@ -1,3 +1,9 @@
+- name: Install Networking Pods (flannel-rbac)
+  shell: "curl -sSL https://rawgit.com/coreos/flannel/v0.7.1/Documentation/kube-flannel-rbac.yml | kubectl create -f -"
+
+- name: Install Networking Pods (kube-flannel)
+  shell: "curl -sSL https://rawgit.com/coreos/flannel/v0.7.1/Documentation/kube-flannel.yml | sed 's/amd64/arm/g' | kubectl create -f -"
+
 - name: Create Heapster Controller
   shell: "curl -sSL https://raw.githubusercontent.com/kubernetes/heapster/master/deploy/kube-config/standalone/heapster-controller.yaml | sed 's/amd64/arm/g' | kubectl apply -f -"
 
@@ -16,11 +22,10 @@
 - name: Create Kubernetes Dashboard
   shell: "kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/recommended/kubernetes-dashboard-arm.yaml"
 
-- name: Create Kubernets Dashboard Role Binding to Master
-  - copy:
+- name: Copy Kubernets Dashboard Role Binding to Master
+  copy:
     src: files/dashboard-admin.yaml
     dest: ./dashboard-admin.yaml
-  shell: "kubectl create -f dashboard-admin.yaml"
 
 - name: Create Kubernetes Dashboard Role Binding
-  shell: "kubectl create -f dashboard-admin.yaml && rm dashboard-admin.yaml -y"
+  shell: "kubectl create -f dashboard-admin.yaml && rm dashboard-admin.yaml"

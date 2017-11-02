@@ -1,9 +1,8 @@
----
-- name: Add and update packages
-  include: apt.yml
-
 - name: Setup system parameters (boot, hosts, timzone)
   include: system.yml
 
 - name: Setup user
   include: user.yml
+
+- name: Copy pub keys
+  include: copy_keys.yml

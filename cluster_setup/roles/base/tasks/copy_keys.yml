@@ -1,0 +1,17 @@
+- name: Set authorized key took from file
+  authorized_key:
+    user: pi
+    state: present
+    key: "{{ lookup('file', '{{ id_rsa_pub }}') }}"
+
+- name: Set authorized key took from file
+  authorized_key:
+    user: root
+    state: present
+    key: "{{ lookup('file', '{{ id_rsa_pub }}') }}"
+
+- name: Set authorized key took from file
+  authorized_key:
+    user: pirate
+    state: present
+    key: "{{ lookup('file', '{{ id_rsa_pub }}') }}"

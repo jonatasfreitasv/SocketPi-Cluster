@@ -1,4 +1,4 @@
-- name: Kubernetes Step 2 - Create Kubernetes utils (Waiting Flannel and kube-dns Pod is Running)
+- name: Kubernetes Utils - Create Kubernetes utils
   hosts: master
   gather_facts: yes
   remote_user: pi

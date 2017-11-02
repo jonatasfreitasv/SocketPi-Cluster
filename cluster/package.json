@@ -1,0 +1,29 @@
+{
+  "name": "kubernetes-pi",
+  "version": "1.0.0",
+  "description": "Create an Kubernetes cluster with Raspberry Pi 3 (Also work with 1/2) and set it up in 20 minutes using Ansible and kubeadm.",
+  "main": "index.js",
+  "scripts": {
+
+    "setup:master": "ansible-playbook -k -i hosts master.yml",
+    "setup:nodes": "ansible-playbook -k -i hosts nodes.yml",
+    "setup:utils": "ansible-playbook -k -i hosts utils.yml",
+
+    "get:config": "ansible-playbook -k -i hosts get-config.yaml",
+
+    "reset": "ansible-playbook -k -i hosts reset.yml",
+
+    "watch:nodes": "watch kubectl get nodes",
+    "watch:pods": "watch kubectl get pods --all-namespaces -o wide",
+    "start:proxy": "kubectl proxy",
+
+    "test:network": "kubectl exec -ti busybox -- nslookup kubernetes.default",
+
+    "ssh:master": "ssh pirate@master.cluster.local",
+    "ssh:node1": "ssh pirate@node1.cluster.local",
+    "ssh:node2": "ssh pirate@node2.cluster.local"
+
+  },
+  "author": "Jonatas Freitas <jonatasfreitasv@gmail.com>",
+  "license": "ISC"
+}
