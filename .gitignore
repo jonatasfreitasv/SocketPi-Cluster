@@ -4,6 +4,8 @@ ionic_app_client/
 */data/graphite
 */data/statsd
 
+nginx_cluster/log/*
+
 ### Node template
 # Logs
 logs
