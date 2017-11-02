@@ -5,7 +5,8 @@
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
-    "client": "node src/client.js"
+    "client": "node src/client.js",
+    "docker:build": "docker build . -t jonatasfreitasv/socketio-server"
   },
   "author": "",
   "license": "ISC",
