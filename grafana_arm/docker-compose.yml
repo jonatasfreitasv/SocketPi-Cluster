@@ -1,16 +1,12 @@
-statsd:
-  image: hopsoft/graphite-statsd
+grafana:
+  image: darkeye9/rpi2-graphite-grafana-statsd
   ports:
     - "3002:80"
     - "2003:2003"
     - "8125:8125/udp"
     - "8126:8126"
+    - "3001:3000"
   volumes:
     - ./data/graphite:/opt/graphite/storage
     - ./data/statsd:/opt/statsd
-grafana:
-  image: grafana/grafana
-  ports:
-    - "3001:3000"
-  volumes:
     - ./data/grafana:/var/lib/grafana
