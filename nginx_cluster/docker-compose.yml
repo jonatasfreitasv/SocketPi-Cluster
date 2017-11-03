@@ -1,5 +1,6 @@
 nginx:
   image: containerstack/nginx-arm
+  network_mode: "host"
   ports:
     - "843:843"
   volumes:
