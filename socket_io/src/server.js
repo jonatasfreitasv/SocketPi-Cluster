@@ -44,6 +44,6 @@ figlet('SocketPI Cluster - Server', (err, data) => {
     console.log(`- start on port ${process.env.SOCKET_SERVER_PORT || 8080}`)
 });
 
-server.listen(8080, function () {
+server.listen(80, function () {
     console.log('%s listening at %s', server.name, server.url);
 });
