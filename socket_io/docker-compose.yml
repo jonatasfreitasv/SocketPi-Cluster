@@ -1,0 +1,7 @@
+nginx:
+  image: containerstack/nginx-arm
+  ports:
+    - "843:843"
+  volumes:
+    - ./:/etc/nginx
+    - ./log:/var/log/nginx
