@@ -1,7 +1,10 @@
 FROM hypriot/rpi-node
 
-COPY src/ .
-COPY package.json .
+COPY src/ /app/src
+
+COPY package.json /app
+
+WORKDIR /app
 
 RUN npm install
 
