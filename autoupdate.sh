@@ -1,1 +1,3 @@
-git add . && git commit -m 'checkpoint' && git push origin master
+git add .
+git commit -m 'checkpoint'
+git push origin master
