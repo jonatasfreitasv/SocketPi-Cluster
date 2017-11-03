@@ -1,5 +1,5 @@
 const figlet = require('figlet');
-const io = require('socket.io')(process.env.SOCKET_SERVER_PORT || 843);
+const io = require('socket.io')(process.env.SOCKET_SERVER_PORT || 8080);
 const SDC = require('statsd-client');
 const restify = require('restify');
 const _package = require('../package.json');
