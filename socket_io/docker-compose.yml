@@ -2,6 +2,3 @@ socketio-server:
   image: jonatasfreitasv/socketio-cluster
   ports:
     - "8080:8080"
-  volumes:
-    - ./:/etc/nginx
-    - ./log:/var/log/nginx
