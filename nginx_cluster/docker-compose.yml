@@ -1,10 +1,5 @@
 version: '2'
 
-networks:
-  default:
-    external:
-      name: host
-
 services:
   nginx:
     image: containerstack/nginx-arm
@@ -13,3 +8,4 @@ services:
     volumes:
       - ./:/etc/nginx
       - ./log:/var/log/nginx
+    network_mode: "host"
