@@ -7,4 +7,4 @@ services:
       - ./:/etc/nginx
       - ./log:/var/log/nginx
 
-network_mode: "host"
+  network_mode: "host"
