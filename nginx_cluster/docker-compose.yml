@@ -6,4 +6,8 @@ services:
     volumes:
       - ./:/etc/nginx
       - ./log:/var/log/nginx
-    network_mode: "host"
+
+networks:
+  default:
+    external:
+      name: host
