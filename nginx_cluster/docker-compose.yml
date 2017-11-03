@@ -1,8 +1,10 @@
-nginx:
-  image: containerstack/nginx-arm
-  network_mode: "host"
-  ports:
-    - "843:843"
-  volumes:
-    - ./:/etc/nginx
-    - ./log:/var/log/nginx
+services:
+  nginx:
+    image: containerstack/nginx-arm
+    ports:
+      - "843:843"
+    volumes:
+      - ./:/etc/nginx
+      - ./log:/var/log/nginx
+
+network_mode: "host"
