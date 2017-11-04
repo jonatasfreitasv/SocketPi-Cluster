@@ -1,5 +1,5 @@
 statsd:
-  image: hopsoft/graphite-statsd
+  image: jonatasfreitasv/graphite-statsd
   ports:
     - "3002:80"
     - "2003:2003"
@@ -9,7 +9,7 @@ statsd:
     - ./data/graphite:/opt/graphite/storage
     - ./data/statsd:/opt/statsd
 grafana:
-  image: grafana/grafana
+  image: fg2it/grafana-armhf
   ports:
     - "3001:3000"
   volumes:
