@@ -7,7 +7,7 @@ const hash = Math.random().toString(36).slice(2, 10);
 
 const connection_string = `http://${process.env.SOCKET_SERVER_HOST}:${process.env.SOCKET_PORT_CLIENT}/socket.io/?hash=${hash}`;
 
-const io = socket.connect(connection_string);
+let io = socket.connect(connection_string);
 
 figlet('SocketPI Cluster - Client', function(err, data) {
     console.log(data);
