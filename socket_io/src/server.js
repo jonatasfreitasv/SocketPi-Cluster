@@ -1,6 +1,6 @@
 const figlet = require('figlet');
 const redis = require('socket.io-redis');
-const io = require('socket.io')(process.env.SOCKET_PORT_SERVER || 8080);
+const io = require('socket.io')(server);
 const SDC = require('statsd-client');
 const express = require('express');
 const app = express();
