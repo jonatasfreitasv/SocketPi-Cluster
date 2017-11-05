@@ -3,5 +3,7 @@ version: '2'
 services:
   nginx:
     image: mangoraft/redis-arm
+    environment:
+      - 
     ports:
       - "6379:6379"
