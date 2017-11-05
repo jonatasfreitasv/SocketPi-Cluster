@@ -8,6 +8,8 @@ const _package = require('../package.json');
 require('dotenv').config();
 
 let sdc = new SDC({host: process.env.STATSD_HOST || '127.0.0.1', port: process.env.STATSD_PORT || 8125, debug: false});
+io.adapter(redis({ host: 'localhost', port: 6379 }));
+
 
 const server = restify.createServer({ name: _package.name, version: _package.version });
 
