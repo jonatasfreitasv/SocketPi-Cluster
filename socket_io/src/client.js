@@ -18,7 +18,7 @@ io.on('connect', function(){
     io.join('default');
 
     data_interval = setInterval(()=>{
-        io.emit('event', new Date());
+        io.to('default').emit('event', new Date());
         console.log(`Send data in ${new Date()}`)
     }, process.env.CLIENT_SEND_DATA_INTERVAL_SECONDS)
 
