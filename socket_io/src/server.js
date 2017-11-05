@@ -4,6 +4,7 @@ const io = require('socket.io')(process.env.SOCKET_PORT_SERVER || 8080);
 const SDC = require('statsd-client');
 const express = require('express');
 const app = express();
+const server = require('http').createServer(app);
 
 require('dotenv').config();
 
