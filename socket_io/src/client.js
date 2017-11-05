@@ -19,7 +19,7 @@ io.on('connect', function(){
     data_interval = setInterval(()=>{
         io.emit('event', new Date());
         console.log(`Send data in ${new Date()}`)
-    }, process.env.CLIENT_SEND_DATA_INTERVAL_SECONDS * 1000)
+    }, process.env.CLIENT_SEND_DATA_INTERVAL_SECONDS)
 
 });
 
