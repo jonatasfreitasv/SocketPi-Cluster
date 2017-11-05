@@ -17,7 +17,7 @@ io.on('error', err => {
 io.on('connection', socket => {
 
     console.log(`Client connected - Number of clients ${Object.keys(io.sockets.sockets).length}`);
-    sdc.gaugeDelta('socketio.connected_clients', Object.keys(io.sockets.sockets).length);
+    sdc.gaugeDelta('socketio.connected_clients', 1);
 
     socket.on('event', data => {
 
@@ -36,7 +36,8 @@ io.on('connection', socket => {
 
     socket.on('disconnect', (res)=> {
         console.log(`Client disconnect: ${res}`);
-        sdc.gaugeDelta('socketio.connected_clients', Object.keys(io.sockets.sockets).length);
+        console.log(`Client connected - Number of clients ${Object.keys(io.sockets.sockets).length}`);
+        sdc.gaugeDelta('socketio.connected_clients', -1);
     });
 
 });
