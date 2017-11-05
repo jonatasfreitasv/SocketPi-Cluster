@@ -1,2 +1,2 @@
-FROM haproxy:1.7-alpine
+FROM hypriot/rpi-haproxy
 COPY haproxy.cfg /usr/local/etc/haproxy/haproxy.cfg
