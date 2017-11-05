@@ -59,4 +59,4 @@ server.listen(port, function () {
         console.log(`statsd host ${process.env.STATSD_HOST}`)
     });
 
-}
+};
