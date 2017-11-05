@@ -1,4 +1,4 @@
 socketio-server:
-  build: .
+  iamge: 
   ports:
     - "8080:8080"
