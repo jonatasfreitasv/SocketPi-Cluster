@@ -36,7 +36,7 @@ io.on('connection', socket => {
 
     socket.on('disconnect', (res)=> {
         console.log(`Client disconnect: ${res}`);
-        sdc.gaugeDelta('socketio.connected_clients', -1);
+        sdc.gaugeDelta('socketio.connected_clients', io.engine.clientsCount);
     });
 
 });
