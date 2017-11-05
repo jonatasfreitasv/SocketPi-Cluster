@@ -15,6 +15,7 @@ let data_interval;
 io.on('connect', function(){
 
     console.log('Connected!');
+    io.join('default');
 
     data_interval = setInterval(()=>{
         io.emit('event', new Date());
