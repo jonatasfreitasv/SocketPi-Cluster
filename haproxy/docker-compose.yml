@@ -5,3 +5,4 @@ services:
     build: .
     ports:
     - "843:80"
+    network_mode: "host"

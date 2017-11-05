@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd943a69-f3f5-491f-b25b-e3cabd783090" name="Default" comment="" />
+    <list default="true" id="cd943a69-f3f5-491f-b25b-e3cabd783090" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haproxy/docker-compose.yml" afterPath="$PROJECT_DIR$/haproxy/docker-compose.yml" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -27,11 +29,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".env" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/socket_io/.env">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
               <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="docker-compose.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nginx_cluster/docker-compose.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="docker-compose.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/haproxy/docker-compose.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -113,11 +135,11 @@
         <option value="$PROJECT_DIR$/nginx_cluster/nginx.conf" />
         <option value="$PROJECT_DIR$/socket_io/src/server.js" />
         <option value="$PROJECT_DIR$/nginx_cluster/docker-compose.yml" />
-        <option value="$PROJECT_DIR$/haproxy/docker-compose.yml" />
         <option value="$PROJECT_DIR$/haproxy/Dockerfile" />
         <option value="$PROJECT_DIR$/haproxy/haproxy.cfg" />
         <option value="$PROJECT_DIR$/socket_io/src/client.js" />
         <option value="$PROJECT_DIR$/socket_io/.env" />
+        <option value="$PROJECT_DIR$/haproxy/docker-compose.yml" />
       </list>
     </option>
   </component>
@@ -173,6 +195,11 @@
               <item name="SocketPi-Cluster" type="b2602c69:ProjectViewProjectNode" />
               <item name="SocketPi-Cluster" type="462c0819:PsiDirectoryNode" />
               <item name="haproxy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SocketPi-Cluster" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SocketPi-Cluster" type="462c0819:PsiDirectoryNode" />
+              <item name="nginx_cluster" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SocketPi-Cluster" type="b2602c69:ProjectViewProjectNode" />
@@ -250,12 +277,12 @@
       <workItem from="1509286773134" duration="250000" />
       <workItem from="1509290398096" duration="11939000" />
       <workItem from="1509651155209" duration="173000" />
-      <workItem from="1509909190198" duration="11009000" />
+      <workItem from="1509909190198" duration="11089000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78737000" />
+    <option name="totallyTimeSpent" value="78817000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="778" extended-state="6" />
@@ -578,14 +605,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nginx_cluster/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nginx_cluster/nginx.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -598,14 +617,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/haproxy/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -638,6 +649,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nginx_cluster/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haproxy/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
           <folding />
         </state>
       </provider>
