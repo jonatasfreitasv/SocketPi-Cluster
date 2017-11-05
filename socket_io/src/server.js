@@ -48,8 +48,13 @@ io.on('connection', socket => {
 
 });
 
-figlet('SocketPI Cluster - Server', (err, data) => {
-    console.log(data);
-    console.log(`- start on port ${process.env.SOCKET_PORT_SERVER || 8080}`)
-    console.log(`statsd host ${process.env.STATSD_HOST}`)
-});
+
+server.listen(port, function () {
+
+    figlet('SocketPI Cluster - Server', (err, data) => {
+        console.log(data);
+        console.log(`- start on port ${process.env.SOCKET_PORT_SERVER || 8080}`)
+        console.log(`statsd host ${process.env.STATSD_HOST}`)
+    });
+
+}
