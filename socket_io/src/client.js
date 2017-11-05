@@ -12,7 +12,7 @@ figlet('SocketPI Cluster - Client', function(err, data) {
 
 let data_interval;
 
-io.on('connect', function(){
+io.on('connect', function(socket){
 
     console.log('Connected!');
     socket.join('default');
