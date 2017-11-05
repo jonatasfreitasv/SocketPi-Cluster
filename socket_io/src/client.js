@@ -5,7 +5,7 @@ require('dotenv').config();
 
 const hash = Math.random().toString(36).slice(2, 10);
 
-const connection_string = `http://${process.env.SOCKET_SERVER_HOST}:${process.env.SOCKET_PORT_CLIENT}/socket.io/?hash=${hash}`;
+const connection_string = `ws://${process.env.SOCKET_SERVER_HOST}:${process.env.SOCKET_PORT_CLIENT}/socket.io/?hash=${hash}`;
 
 let io = socket.connect(connection_string);
 
