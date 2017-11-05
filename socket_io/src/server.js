@@ -1,5 +1,5 @@
 const figlet = require('figlet');
-const io = require('socket.io')(process.env.SOCKET_SERVER_PORT || 8080);
+const io = require('socket.io')(process.env.SOCKET_PORT_SERVER || 8080);
 const SDC = require('statsd-client');
 const restify = require('restify');
 const _package = require('../package.json');
@@ -41,7 +41,7 @@ io.on('connection', socket => {
 
 figlet('SocketPI Cluster - Server', (err, data) => {
     console.log(data);
-    console.log(`- start on port ${process.env.SOCKET_SERVER_PORT || 8080}`)
+    console.log(`- start on port ${process.env.SOCKET_PORT_SERVER || 8080}`)
     console.log(`statsd host ${process.env.STATSD_HOST}`)
 });
 
