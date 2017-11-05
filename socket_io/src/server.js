@@ -10,6 +10,12 @@ io.adapter(redis({ host: '192.168.0.101', port: 6379, password: 'abc123' }));
 
 sdc.gauge('socketio.connected_clients', 0);
 
+io.on('error', err => {
+
+    console.log(err);
+
+});
+
 io.on('connection', socket => {
 
     console.log(`Client connected - Number of clients ${Object.keys(io.sockets.sockets).length}`);
