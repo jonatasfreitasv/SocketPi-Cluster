@@ -3,15 +3,11 @@ const socket = require('socket.io-client');
 
 require('dotenv').config();
 
-const hash = Math.random().toString(36).slice(2, 10);
-
-const connection_string = `ws://${process.env.SOCKET_SERVER_HOST}:${process.env.SOCKET_PORT_CLIENT}/socket.io/?hash=${hash}`;
-
-let io = socket.connect(connection_string);
+let io = socket.connect(`ws://${process.env.SOCKET_SERVER_HOST}:${process.env.SOCKET_PORT_CLIENT}`);
 
 figlet('SocketPI Cluster - Client', function(err, data) {
     console.log(data);
-    console.log(`- wating connection on socket server - ${connection_string}`);
+    console.log(`- wating connection on socket server - ${process.env.SOCKET_SERVER_HOST}:${process.env.SOCKET_PORT_CLIENT}`);
 });
 
 let data_interval;
