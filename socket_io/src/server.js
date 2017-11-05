@@ -2,6 +2,8 @@ const figlet = require('figlet');
 const redis = require('socket.io-redis');
 const io = require('socket.io')(process.env.SOCKET_PORT_SERVER || 8080);
 const SDC = require('statsd-client');
+var express = require('express');
+var app = express();
 
 require('dotenv').config();
 
@@ -27,7 +29,7 @@ io.on('connection', socket => {
         sdc.timing('socketio.delay', end);
 
         socket.emit('pong');
-        
+
         console.log(`Data received in ${end}ms`);
 
     });
