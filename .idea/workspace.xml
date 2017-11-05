@@ -27,11 +27,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="haproxy.cfg" pinned="false" current-in-tab="true">
+      <file leaf-file-name="haproxy.cfg" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/haproxy/haproxy.cfg">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="18" column="11" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+              <caret line="18" column="11" lean-forward="false" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="docker-compose.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/haproxy/docker-compose.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -224,6 +234,11 @@
               <item name="SocketPi-Cluster" type="462c0819:PsiDirectoryNode" />
               <item name="haproxy" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SocketPi-Cluster" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SocketPi-Cluster" type="462c0819:PsiDirectoryNode" />
+              <item name="nginx_cluster" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -250,11 +265,11 @@
       <recent name="$PROJECT_DIR$/cluster/roles/k8s-files" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/haproxy" />
       <recent name="$PROJECT_DIR$/redis-stat" />
       <recent name="$PROJECT_DIR$/cluster" />
       <recent name="$PROJECT_DIR$/cluster/roles/disable-iptables" />
       <recent name="$PROJECT_DIR$/cluster/roles/master/files" />
-      <recent name="$PROJECT_DIR$/cluster/roles/node/files" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -289,12 +304,12 @@
       <workItem from="1509286773134" duration="250000" />
       <workItem from="1509290398096" duration="11939000" />
       <workItem from="1509651155209" duration="173000" />
-      <workItem from="1509909190198" duration="10351000" />
+      <workItem from="1509909190198" duration="10363000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78079000" />
+    <option name="totallyTimeSpent" value="78091000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="778" extended-state="6" />
@@ -333,13 +348,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/kubernetes/roles/base/files/docker_profile.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kubernetes/roles/base/files/disable-iptables.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -674,7 +682,15 @@
     <entry file="file://$PROJECT_DIR$/haproxy/haproxy.cfg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="18" column="11" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+          <caret line="18" column="11" lean-forward="false" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/haproxy/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
