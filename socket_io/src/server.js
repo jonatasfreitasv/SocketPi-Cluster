@@ -6,6 +6,8 @@ const express = require('express');
 const app = express();
 const server = require('http').createServer(app);
 
+const port = process.env.SOCKET_PORT_SERVER || 8080;
+
 require('dotenv').config();
 
 let sdc = new SDC({host: process.env.STATSD_HOST || '127.0.0.1', port: process.env.STATSD_PORT || 8125, debug: false});
@@ -53,7 +55,7 @@ server.listen(port, function () {
 
     figlet('SocketPI Cluster - Server', (err, data) => {
         console.log(data);
-        console.log(`- start on port ${process.env.SOCKET_PORT_SERVER || 8080}`)
+        console.log(`- start on port ${port}`);
         console.log(`statsd host ${process.env.STATSD_HOST}`)
     });
 
