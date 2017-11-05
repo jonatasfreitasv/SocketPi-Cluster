@@ -6,4 +6,4 @@ services:
     environment:
       - REDIS_PASS=abc123
     ports:
-      - "6379:6379"
+      - "63790:63790"
