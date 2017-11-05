@@ -37,11 +37,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".env" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/socket_io/.env">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
               <caret line="8" column="37" lean-forward="false" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="docker-compose.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/redis/docker-compose.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -77,7 +87,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cluster/dashboard-rolebinding" />
         <option value="$PROJECT_DIR$/cluster/example_project/busybox.yaml" />
         <option value="$PROJECT_DIR$/cluster/dashboard-rolebinding.yaml" />
         <option value="$PROJECT_DIR$/cluster/dashboard.yaml" />
@@ -128,6 +137,7 @@
         <option value="$PROJECT_DIR$/socket_io/docker-compose.yml" />
         <option value="$PROJECT_DIR$/socket_io/Dockerfile" />
         <option value="$PROJECT_DIR$/socket_io/.env" />
+        <option value="$PROJECT_DIR$/redis/docker-compose.yml" />
       </list>
     </option>
   </component>
@@ -183,17 +193,6 @@
               <item name="SocketPi-Cluster" type="b2602c69:ProjectViewProjectNode" />
               <item name="SocketPi-Cluster" type="462c0819:PsiDirectoryNode" />
               <item name="nginx_cluster" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SocketPi-Cluster" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SocketPi-Cluster" type="462c0819:PsiDirectoryNode" />
-              <item name="socket_io" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SocketPi-Cluster" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SocketPi-Cluster" type="462c0819:PsiDirectoryNode" />
-              <item name="socket_io" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -260,12 +259,12 @@
       <workItem from="1509286773134" duration="250000" />
       <workItem from="1509290398096" duration="11939000" />
       <workItem from="1509651155209" duration="173000" />
-      <workItem from="1509909190198" duration="5811000" />
+      <workItem from="1509909190198" duration="5860000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73539000" />
+    <option name="totallyTimeSpent" value="73588000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="778" extended-state="6" />
@@ -304,7 +303,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/socket_io/a.json" />
     <entry file="file://$PROJECT_DIR$/kubernetes/k8s-files/busybox.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -585,14 +583,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nginx_cluster/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/socket_io/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -637,6 +627,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="37" lean-forward="false" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nginx_cluster/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="24" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
           <folding />
         </state>
       </provider>
