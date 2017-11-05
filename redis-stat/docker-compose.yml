@@ -2,7 +2,7 @@ version: '2'
 
 services:
   nginx:
-    image: mangoraft/redis-arm
+    image: richardhull/redis-stat
     environment:
       - REDIS_PASS=abc123
     ports:
