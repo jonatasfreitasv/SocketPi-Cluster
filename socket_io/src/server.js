@@ -17,7 +17,7 @@ io.on('error', err => {
 io.on('connection', socket => {
 
     console.log(`Client connected - Number of clients ${Object.keys(io.sockets.sockets).length}`);
-    sdc.gaugeDelta('socketio.connected_clients', 1);
+    sdc.gaugeDelta('socketio.connected_clients', io.engine.clientsCount);
 
     socket.on('event', data => {
 
