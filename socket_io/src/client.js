@@ -3,7 +3,7 @@ const socket = require('socket.io-client');
 
 require('dotenv').config();
 
-let io = socket.connect(`${process.env.SOCKET_SERVER_HOST}:${process.env.SOCKET_SERVER_PORT}`);
+let io = socket.connect(`ws://${process.env.SOCKET_SERVER_HOST}:${process.env.SOCKET_SERVER_PORT}`);
 
 figlet('SocketPI Cluster - Client', function(err, data) {
     console.log(data);
