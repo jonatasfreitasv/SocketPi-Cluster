@@ -4,7 +4,7 @@ const socket = require('socket.io-client');
 require('dotenv').config();
 
 const hash = Math.random().toString(36).slice(2, 10);
-const io = socket.connect(`http://${process.env.SOCKET_SERVER_HOST}:${process.env.SOCKET_PORT_CLIENT}`);
+const io = socket.connect(`http://${process.env.SOCKET_SERVER_HOST}:${process.env.SOCKET_PORT_CLIENT}/engine.io/?hash=${hash}`);
 
 figlet('SocketPI Cluster - Client', function(err, data) {
     console.log(data);
