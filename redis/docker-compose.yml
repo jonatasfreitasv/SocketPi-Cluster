@@ -4,6 +4,6 @@ services:
   nginx:
     image: mangoraft/redis-arm
     environment:
-      - REDIS_PASS="abc123"
+      - REDIS_PASS=abc123
     ports:
       - "6379:6379"
