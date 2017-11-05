@@ -2,6 +2,6 @@ version: '2'
 
 services:
   nginx:
-    image: containerstack/nginx-arm
+    image: mangoraft/redis-arm
     ports:
       - "6379:6379"
