@@ -41,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/haproxy/haproxy.cfg">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+              <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -285,12 +285,12 @@
       <workItem from="1509286773134" duration="250000" />
       <workItem from="1509290398096" duration="11939000" />
       <workItem from="1509651155209" duration="173000" />
-      <workItem from="1509909190198" duration="12376000" />
+      <workItem from="1509909190198" duration="12451000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80104000" />
+    <option name="totallyTimeSpent" value="80179000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="778" extended-state="6" />
@@ -672,7 +672,7 @@
     <entry file="file://$PROJECT_DIR$/haproxy/haproxy.cfg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+          <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
           <folding />
         </state>
       </provider>
