@@ -61,7 +61,7 @@
         <entry file="file://$PROJECT_DIR$/socket_io/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="8" column="70" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="70" />
+              <caret line="8" column="70" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -275,12 +275,12 @@
       <workItem from="1509286773134" duration="250000" />
       <workItem from="1509290398096" duration="11939000" />
       <workItem from="1509651155209" duration="173000" />
-      <workItem from="1509909190198" duration="9061000" />
+      <workItem from="1509909190198" duration="9070000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76789000" />
+    <option name="totallyTimeSpent" value="76798000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="778" extended-state="6" />
@@ -659,7 +659,7 @@
     <entry file="file://$PROJECT_DIR$/socket_io/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="70" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="70" />
+          <caret line="8" column="70" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="70" />
           <folding />
         </state>
       </provider>
