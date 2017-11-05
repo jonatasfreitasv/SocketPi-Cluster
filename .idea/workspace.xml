@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd943a69-f3f5-491f-b25b-e3cabd783090" name="Default" comment="" />
+    <list default="true" id="cd943a69-f3f5-491f-b25b-e3cabd783090" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haproxy/haproxy.cfg" afterPath="$PROJECT_DIR$/haproxy/haproxy.cfg" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -40,8 +42,8 @@
       <file leaf-file-name="haproxy.cfg" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/haproxy/haproxy.cfg">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="25" lean-forward="false" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+            <state relative-caret-position="412">
+              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -122,12 +124,12 @@
         <option value="$PROJECT_DIR$/nginx_cluster/nginx.conf" />
         <option value="$PROJECT_DIR$/nginx_cluster/docker-compose.yml" />
         <option value="$PROJECT_DIR$/haproxy/Dockerfile" />
-        <option value="$PROJECT_DIR$/haproxy/haproxy.cfg" />
         <option value="$PROJECT_DIR$/socket_io/src/client.js" />
         <option value="$PROJECT_DIR$/haproxy/docker-compose.yml" />
         <option value="$PROJECT_DIR$/socket_io/package.json" />
         <option value="$PROJECT_DIR$/socket_io/src/server.js" />
         <option value="$PROJECT_DIR$/socket_io/.env" />
+        <option value="$PROJECT_DIR$/haproxy/haproxy.cfg" />
       </list>
     </option>
   </component>
@@ -265,12 +267,12 @@
       <workItem from="1509286773134" duration="250000" />
       <workItem from="1509290398096" duration="11939000" />
       <workItem from="1509651155209" duration="173000" />
-      <workItem from="1509909190198" duration="12100000" />
+      <workItem from="1509909190198" duration="12161000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79828000" />
+    <option name="totallyTimeSpent" value="79889000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="778" extended-state="6" />
@@ -651,8 +653,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/haproxy/haproxy.cfg">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="25" lean-forward="false" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+        <state relative-caret-position="412">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding />
         </state>
       </provider>
