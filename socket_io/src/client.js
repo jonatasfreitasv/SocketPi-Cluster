@@ -12,13 +12,12 @@ figlet('SocketPI Cluster - Client', function(err, data) {
 
 let data_interval;
 
-io.on('connect', function(socket){
+io.on('connect', function(){
 
     console.log('Connected!');
-    socket.join('default');
 
     data_interval = setInterval(()=>{
-        io.to('default').emit('event', new Date());
+        io.emit('event', new Date());
         console.log(`Send data in ${new Date()}`)
     }, process.env.CLIENT_SEND_DATA_INTERVAL_SECONDS)
 
