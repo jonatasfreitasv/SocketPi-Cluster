@@ -1,4 +1,4 @@
 socketio-server:
-  iamge: 
+  iamge: jonatasfreitasv/socketio-server:latest
   ports:
     - "8080:8080"
