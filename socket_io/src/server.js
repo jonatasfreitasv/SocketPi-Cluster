@@ -27,8 +27,7 @@ io.on('connection', socket => {
         sdc.timing('socketio.delay', end);
 
         socket.emit('pong');
-
-
+        
         console.log(`Data received in ${end}ms`);
 
     });
