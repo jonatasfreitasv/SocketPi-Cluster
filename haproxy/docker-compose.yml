@@ -2,6 +2,6 @@ version: '2'
 
 services:
   haproxy:
-    image: hypriot/rpi-haproxy
+    build: .
     ports:
     - "843:80"
