@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd943a69-f3f5-491f-b25b-e3cabd783090" name="Default" comment="" />
+    <list default="true" id="cd943a69-f3f5-491f-b25b-e3cabd783090" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/socket_io/.env" afterPath="$PROJECT_DIR$/socket_io/.env" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -107,7 +109,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cluster/example_project/service.yaml" />
         <option value="$PROJECT_DIR$/cluster/hypriot-ingress.yaml" />
         <option value="$PROJECT_DIR$/cluster/start-cluster.yaml" />
         <option value="$PROJECT_DIR$/cluster/kubernetes-dashboard-arm.yaml" />
@@ -158,6 +159,7 @@
         <option value="$PROJECT_DIR$/swarm_cluster/README.md" />
         <option value="$PROJECT_DIR$/grafana/docker-compose.yml" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/socket_io/.env" />
       </list>
     </option>
   </component>
@@ -284,12 +286,12 @@
       <workItem from="1509286773134" duration="250000" />
       <workItem from="1509290398096" duration="11939000" />
       <workItem from="1509651155209" duration="173000" />
-      <workItem from="1509909190198" duration="1090000" />
+      <workItem from="1509909190198" duration="1376000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68818000" />
+    <option name="totallyTimeSpent" value="69104000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="778" extended-state="6" />
