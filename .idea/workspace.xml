@@ -2,58 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd943a69-f3f5-491f-b25b-e3cabd783090" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/admin.conf/master.cluster.local/etc/kubernetes/admin.conf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/config.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/example_project/Dockerfile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/example_project/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/example_project/busybox.yaml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/example_project/deployment.yaml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/example_project/server.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/example_project/service.yaml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/get-config.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/hosts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/k8s-files/busybox.yaml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/k8s-files/dashboard.yaml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/k8s-files/ingress.yaml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/k8s-files/main.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/k8s-files/skydns-rc.yaml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/k8s-files/traefik.yaml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/master.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/nodes.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/reset.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/roles/base/defaults/main.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/roles/base/files/copy_hosts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/roles/base/files/disable-iptables.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/roles/base/files/docker_profile.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/roles/base/tasks/apt.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/roles/base/tasks/main.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/roles/base/tasks/system.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/roles/base/tasks/user.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/roles/base/templates/hosts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/roles/get-config/tasks/main.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/roles/master/tasks/main.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/roles/node/files/join.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/roles/node/tasks/main.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/roles/reset-iptables/files/reset-iptables.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/roles/reset-iptables/tasks/main.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/roles/reset/tasks/main.yaml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/roles/update/tasks/main.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/roles/utils/files/dashboard-admin.yaml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/roles/utils/tasks/main.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/scripts/disable-iptables.sh" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/setup.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/update.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cluster/utils.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grafana/data/grafana/sessions/1/6/16f5c395158b72c5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grafana_arm/data/grafana/grafana.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grafana_arm/data/grafana/sessions/1/6/16f5c395158b72c5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/grafana_arm/docker-compose.yml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grafana/data/grafana/grafana.db" afterPath="$PROJECT_DIR$/grafana/data/grafana/grafana.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grafana/docker-compose.yml" afterPath="$PROJECT_DIR$/grafana/docker-compose.yml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -74,7 +24,7 @@
         <entry file="file://$PROJECT_DIR$/grafana/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+              <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -275,12 +225,12 @@
       <workItem from="1509286773134" duration="250000" />
       <workItem from="1509290398096" duration="11939000" />
       <workItem from="1509651155209" duration="173000" />
-      <workItem from="1509909190198" duration="627000" />
+      <workItem from="1509909190198" duration="904000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68355000" />
+    <option name="totallyTimeSpent" value="68632000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="778" extended-state="6" />
@@ -630,7 +580,7 @@
     <entry file="file://$PROJECT_DIR$/grafana/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+          <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
           <folding />
         </state>
       </provider>
