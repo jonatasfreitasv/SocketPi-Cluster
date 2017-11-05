@@ -4,4 +4,4 @@ services:
   haproxy:
     build: ./haproxy
     ports:
-    - "3000:80"
+    - "843:80"
