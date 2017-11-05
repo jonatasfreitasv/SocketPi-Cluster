@@ -4,8 +4,5 @@ services:
   nginx:
     image: containerstack/nginx-arm
     ports:
-      - "843:843"
-    volumes:
-      - ./:/etc/nginx
-      - ./log:/var/log/nginx
+      - "6379:6379"
     network_mode: "host"
