@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd943a69-f3f5-491f-b25b-e3cabd783090" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/nginx_cluster/docker-compose.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/nginx_cluster/log/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/nginx_cluster/mime.types" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/nginx_cluster/nginx.conf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/redis-stat/docker-compose.yml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/master-containers/docker-compose.yml" afterPath="$PROJECT_DIR$/master-containers/docker-compose.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/autoupdate.sh" afterPath="$PROJECT_DIR$/utils/autoupdate.sh" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -39,8 +33,8 @@
       <file leaf-file-name="autoupdate.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/utils/autoupdate.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="15">
+              <caret line="1" column="65" lean-forward="true" selection-start-line="1" selection-start-column="65" selection-end-line="1" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -250,12 +244,12 @@
       <workItem from="1509651155209" duration="173000" />
       <workItem from="1509909190198" duration="21405000" />
       <workItem from="1510010358152" duration="113000" />
-      <workItem from="1510010505531" duration="902000" />
+      <workItem from="1510010505531" duration="1047000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90148000" />
+    <option name="totallyTimeSpent" value="90293000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="778" extended-state="6" />
@@ -586,8 +580,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/autoupdate.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="15">
+          <caret line="1" column="65" lean-forward="true" selection-start-line="1" selection-start-column="65" selection-end-line="1" selection-end-column="65" />
           <folding />
         </state>
       </provider>
