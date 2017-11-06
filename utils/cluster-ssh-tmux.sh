@@ -1,5 +1,5 @@
 #!/bin/bash
-SESSION=c
+SESSION=cluster_ssh
 
 tmux -2 new-session -d -s $SESSION
 
