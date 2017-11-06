@@ -1,4 +1,4 @@
-FROM yobasystems/alpine-nodejs
+FROM yobasystems/alpine-nodejs:arm32v7
 
 COPY package.json /tmp/package.json
 RUN cd /tmp && npm install
