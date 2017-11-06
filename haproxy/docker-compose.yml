@@ -9,3 +9,4 @@ services:
     - "80:80"
     - "843:843"
     - "1936:1936"
+    network_mode: "host"
