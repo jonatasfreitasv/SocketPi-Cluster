@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd943a69-f3f5-491f-b25b-e3cabd783090" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/haproxy/haproxy.cfg" afterPath="$PROJECT_DIR$/haproxy/haproxy.cfg" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,11 +29,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".env" pinned="false" current-in-tab="true">
+      <file leaf-file-name="haproxy.cfg" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/haproxy/haproxy.cfg">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/socket_io/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="22" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="22" />
+            <state relative-caret-position="120">
+              <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -181,17 +191,6 @@
               <item name="SocketPi-Cluster" type="462c0819:PsiDirectoryNode" />
               <item name="nginx_cluster" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="SocketPi-Cluster" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SocketPi-Cluster" type="462c0819:PsiDirectoryNode" />
-              <item name="socket_io" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SocketPi-Cluster" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SocketPi-Cluster" type="462c0819:PsiDirectoryNode" />
-              <item name="socket_io" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -257,12 +256,12 @@
       <workItem from="1509286773134" duration="250000" />
       <workItem from="1509290398096" duration="11939000" />
       <workItem from="1509651155209" duration="173000" />
-      <workItem from="1509909190198" duration="15765000" />
+      <workItem from="1509909190198" duration="15877000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83493000" />
+    <option name="totallyTimeSpent" value="83605000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="778" extended-state="6" />
@@ -625,10 +624,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/haproxy/haproxy.cfg">
+    <entry file="file://$PROJECT_DIR$/socket_io/.env">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+        <state relative-caret-position="120">
+          <caret line="8" column="37" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -641,10 +640,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/socket_io/.env">
+    <entry file="file://$PROJECT_DIR$/haproxy/haproxy.cfg">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="22" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="22" />
+        <state relative-caret-position="285">
+          <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
           <folding />
         </state>
       </provider>
