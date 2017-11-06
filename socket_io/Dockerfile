@@ -1,4 +1,4 @@
-FROM hypriot/rpi-node
+FROM yobasystems/alpine-nodejs
 
 COPY package.json /tmp/package.json
 RUN cd /tmp && npm install
