@@ -2,7 +2,10 @@ version: '2'
 
 services:
   haproxy:
-    build: .
+    image: hypriot/rpi-haproxy
+    volumes:
+      - $PWD:/haproxy-override
     ports:
-    - "843:80"
-    network_mode: "host"
+    - "80:80"
+    - "843:843"
+    - "1936:1936"
