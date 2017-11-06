@@ -10,3 +10,10 @@ services:
     - "843:843"
     - "1936:1936"
     network_mode: "host"
+
+  redis:
+    image: mangoraft/redis-arm
+    environment:
+      - REDIS_PASS=abc123
+    ports:
+      - "6379:6379"

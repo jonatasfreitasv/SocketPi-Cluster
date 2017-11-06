@@ -1,9 +1,0 @@
-version: '2'
-
-services:
-  nginx:
-    image: richardhull/redis-stat
-    environment:
-      - REDIS_PASS=abc123
-    ports:
-      - "63790:63790"
