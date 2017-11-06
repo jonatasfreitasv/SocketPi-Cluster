@@ -1,4 +1,4 @@
 socketio-server:
-  image: jonatasfreitasv/socketio-server:latest
+  build: .
   ports:
     - "8080:8080"
