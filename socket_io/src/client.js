@@ -29,7 +29,7 @@ io.on('connect', function(){
 
 io.on('pong', data => {
     const latency = new Date().getTime() - data;
-    console.log(`Latency is ${latency}ms`);
+    console.log(`Latency from server is ${latency}ms`);
 });
 
 io.on('disconnect', () => {
