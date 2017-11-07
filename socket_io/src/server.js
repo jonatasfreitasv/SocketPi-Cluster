@@ -33,7 +33,7 @@ io.on('connection', socket => {
 
     socket.on('event', data => {
 
-        const delay_milisecond = now() - data;
+        const delay_milisecond = (now() - data).toFixed(3);
 
         console.log('debug', current_microsecond, parseFloat(data), delay_milisecond);
 
