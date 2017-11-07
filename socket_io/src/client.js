@@ -18,8 +18,10 @@ io.on('connect', function(){
 
     data_interval = setInterval(()=>{
 
-        io.emit('ping', new Date().getTime());
-        console.log(`Send data in ${new Date()}`)
+        const now = new Date();
+
+        io.emit('ping', now.getTime());
+        console.log(`Send data in ${now}`)
 
     }, process.env.CLIENT_SEND_DATA_INTERVAL_SECONDS)
 
