@@ -23,6 +23,13 @@ io.on('connect', function(){
 
 });
 
+io.on('pong', function(data){
+
+    const end = new Date().getTime() - data;
+    console.log(`Data received in ${end}ms`);
+
+});
+
 io.on('disconnect', function(){
     clearInterval(data_interval);
     console.log('Disconected!');
