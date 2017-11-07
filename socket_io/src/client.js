@@ -27,12 +27,14 @@ io.on('connect', function(){
 
 });
 
-io.on('pong', function(data){
-    const end = new Date().getTime() - data;
-    console.log(`Latency is ${end}ms`);
+io.on('pong', data => {
+
+    const latency = new Date().getTime() - data;
+    console.log(`Latency is ${latency}ms`);
+
 });
 
-io.on('disconnect', function(){
+io.on('disconnect', () => {
     clearInterval(data_interval);
-    console.log('Disconected!');
+    console.log('Disconected from server!');
 });
