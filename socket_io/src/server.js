@@ -34,16 +34,16 @@ io.on('connection', socket => {
 
         const current_microsecond = process.hrtime()[0] * 1000000 + process.hrtime()[1] / 1000;
 
-        const end = current_microsecond - parseFloat(data);
+        const delay_milisecond = parseInt((current_microsecond - parseFloat(data)) * 1000);
 
-        console.log('debug', current_microsecond, parseFloat(data), end);
+        console.log('debug', current_microsecond, parseFloat(data), delay_milisecond);
 
         sdc.increment('socketio.events');
-        sdc.timing('socketio.delay', end);
+        sdc.timing('socketio.delay', delay_milisecond);
 
         socket.emit('pong');
 
-        console.log(`Data received in ${end}ms`);
+        console.log(`Data received in ${delay_milisecond}ms`);
 
     });
 
