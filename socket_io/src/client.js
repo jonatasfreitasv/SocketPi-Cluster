@@ -26,7 +26,7 @@ io.on('connect', function(){
 io.on('pong', function(data){
 
     const end = new Date().getTime() - data;
-    console.log(`Data received in ${end}ms`);
+    console.log(`Data received in ${end}ms`, data);
 
 });
 
