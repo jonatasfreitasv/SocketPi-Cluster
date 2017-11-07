@@ -20,7 +20,7 @@ io.on('connect', function(){
 
         const now = new Date();
 
-        io.emit('ping', now.getTime());
+        io.emit('event', now.getTime());
         console.log(`Send data on ${now}`)
 
     }, process.env.CLIENT_SEND_DATA_INTERVAL_SECONDS)

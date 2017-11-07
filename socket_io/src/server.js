@@ -30,7 +30,7 @@ io.on('connection', socket => {
     console.log(`Client connected - Number of clients ${Object.keys(io.sockets.sockets).length}`);
     sdc.gaugeDelta('socketio.connected_clients', 1);
 
-    socket.on('ping', data => {
+    socket.on('event', data => {
 
         const latency = new Date().getTime() - data;
 
