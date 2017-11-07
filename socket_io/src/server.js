@@ -32,9 +32,11 @@ io.on('connection', socket => {
 
     socket.on('event', data => {
 
-        const end = new Date() - new Date(data);
+        const current_microsecond = process.hrtime()[0] * 1000000 + process.hrtime()[1] / 1000;
 
-        console.log('debug', new Date(), new Date(data), end);
+        const end = current_microsecond - parseFloat(data);
+
+        console.log('debug', current_microsecond, parseFloat(data), end);
 
         sdc.increment('socketio.events');
         sdc.timing('socketio.delay', end);
