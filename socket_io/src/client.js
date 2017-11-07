@@ -17,17 +17,17 @@ io.on('connect', function(){
     console.log('Connected!');
 
     data_interval = setInterval(()=>{
-        io.emit('event', new Date().getTime());
-        console.log(`Send data in ${new Date().getTime()}`)
+
+        io.emit('ping', new Date().getTime());
+        console.log(`Send data in ${new Date()}`)
+
     }, process.env.CLIENT_SEND_DATA_INTERVAL_SECONDS)
 
 });
 
 io.on('pong', function(data){
-
     const end = new Date().getTime() - data;
-    console.log(`Data received in ${end}ms`, data);
-
+    console.log(`Latency is ${end}ms`);
 });
 
 io.on('disconnect', function(){
