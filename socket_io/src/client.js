@@ -21,20 +21,18 @@ io.on('connect', function(){
         const now = new Date();
 
         io.emit('ping', now.getTime());
-        console.log(`Send data in ${now}`)
+        console.log(`Send data on ${now}`)
 
     }, process.env.CLIENT_SEND_DATA_INTERVAL_SECONDS)
 
 });
 
 io.on('pong', data => {
-
     const latency = new Date().getTime() - data;
     console.log(`Latency is ${latency}ms`);
-
 });
 
 io.on('disconnect', () => {
     clearInterval(data_interval);
-    console.log('Disconected from server!');
+    console.log('Disconected!');
 });

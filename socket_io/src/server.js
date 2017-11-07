@@ -32,14 +32,14 @@ io.on('connection', socket => {
 
     socket.on('ping', data => {
 
-        const end = new Date().getTime() - data;
+        const latency = new Date().getTime() - data;
 
         sdc.increment('socketio.events');
-        sdc.timing('socketio.delay', end);
+        sdc.timing('socketio.latency', latency);
 
         socket.emit('pong', new Date().getTime());
 
-        console.log(`Latency is ${end}ms`);
+        console.log(`Latency is ${latency}ms`);
 
     });
 
