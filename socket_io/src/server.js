@@ -1,4 +1,5 @@
 const figlet = require('figlet');
+const now = require("performance-now")
 const redis = require('socket.io-redis');
 const SDC = require('statsd-client');
 const express = require('express');
