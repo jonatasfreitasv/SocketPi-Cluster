@@ -1,5 +1,4 @@
 const figlet = require('figlet');
-const now = require("performance-now");
 const redis = require('socket.io-redis');
 const SDC = require('statsd-client');
 const express = require('express');
@@ -33,16 +32,14 @@ io.on('connection', socket => {
 
     socket.on('event', data => {
 
-        const delay_in_ms = (now() - data).toFixed(3);
-
-        console.log('debug', now(), data, delay_in_ms);
+        const end = new Date().getTime() - data;
 
         sdc.increment('socketio.events');
-        sdc.timing('socketio.delay', delay_in_ms);
+        sdc.timing('socketio.delay', end);
 
         socket.emit('pong');
 
-        console.log(`Data received in ${delay_in_ms}ms`);
+        console.log(`Data received in ${end}ms`);
 
     });
 
