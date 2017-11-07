@@ -1,0 +1,5 @@
+- name: Start nodes Socket.io container
+  shell: "cd /root/SocketPi-Cluster/socket_io && docker-compose up -d"
+  register: out
+
+- debug: var=out.stdout_lines

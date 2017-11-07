@@ -1,0 +1,11 @@
+- name: Start HAProxy and Redis on Master
+  hosts: pis
+  gather_facts: yes
+  remote_user: pirate
+  become: true
+  become_method: sudo
+  vars_files:
+    - config.yml
+
+  roles:
+    - nodes

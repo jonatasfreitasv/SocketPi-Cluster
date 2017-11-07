@@ -1,0 +1,5 @@
+- name: Start master containers
+  shell: "cd /root/SocketPi-Cluster/master-containers && docker-compose up -d"
+  register: out
+
+- debug: var=out.stdout_lines

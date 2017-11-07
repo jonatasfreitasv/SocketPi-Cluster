@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cd943a69-f3f5-491f-b25b-e3cabd783090" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/autoupdate.sh" afterPath="$PROJECT_DIR$/utils/autoupdate.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/socket_io/src/server.js" afterPath="$PROJECT_DIR$/socket_io/src/server.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,21 +20,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="cluster-ssh-tmux.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/cluster-ssh-tmux.sh">
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/socket_io/src/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+            <state relative-caret-position="217">
+              <caret line="21" column="3" lean-forward="false" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="autoupdate.sh" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/utils/autoupdate.sh">
+      <file leaf-file-name="update.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/utils/update.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
-              <caret line="1" column="65" lean-forward="true" selection-start-line="1" selection-start-column="65" selection-end-line="1" selection-end-column="65" />
+              <caret line="1" column="24" lean-forward="false" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -70,10 +70,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cluster/roles/flannel/tasks/main.yml" />
-        <option value="$PROJECT_DIR$/cluster/master-step3.yml" />
-        <option value="$PROJECT_DIR$/cluster/roles/dashboard/files/dashboard-admin.yaml" />
-        <option value="$PROJECT_DIR$/cluster/roles/dashboard/tasks/main.yml" />
         <option value="$PROJECT_DIR$/cluster/k8s-files/busybox.yaml" />
         <option value="$PROJECT_DIR$/cluster/example_project/Dockerfile" />
         <option value="$PROJECT_DIR$/cluster/a.json" />
@@ -108,7 +104,6 @@
         <option value="$PROJECT_DIR$/redis-stat/docker-compose.yml" />
         <option value="$PROJECT_DIR$/nginx_cluster/nginx.conf" />
         <option value="$PROJECT_DIR$/socket_io/package.json" />
-        <option value="$PROJECT_DIR$/socket_io/src/server.js" />
         <option value="$PROJECT_DIR$/haproxy/Dockerfile" />
         <option value="$PROJECT_DIR$/socket_io/docker-compose.yml" />
         <option value="$PROJECT_DIR$/socket_io/Dockerfile" />
@@ -121,6 +116,11 @@
         <option value="$PROJECT_DIR$/haproxy/docker-compose.yml" />
         <option value="$PROJECT_DIR$/utils/cluster-ssh-tmux.sh" />
         <option value="$PROJECT_DIR$/utils/autoupdate.sh" />
+        <option value="$PROJECT_DIR$/cluster_setup/start-master.yml" />
+        <option value="$PROJECT_DIR$/cluster_setup/roles/master/tasks/main.yml" />
+        <option value="$PROJECT_DIR$/cluster_setup/roles/nodes/tasks/main.yml" />
+        <option value="$PROJECT_DIR$/cluster_setup/start-nodes.yml" />
+        <option value="$PROJECT_DIR$/socket_io/src/server.js" />
       </list>
     </option>
   </component>
@@ -176,6 +176,17 @@
             <path>
               <item name="SocketPi-Cluster" type="b2602c69:ProjectViewProjectNode" />
               <item name="SocketPi-Cluster" type="462c0819:PsiDirectoryNode" />
+              <item name="socket_io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SocketPi-Cluster" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SocketPi-Cluster" type="462c0819:PsiDirectoryNode" />
+              <item name="socket_io" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SocketPi-Cluster" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SocketPi-Cluster" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -196,11 +207,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cluster_setup/roles" />
+      <recent name="$PROJECT_DIR$/cluster_setup/roles/master" />
       <recent name="$PROJECT_DIR$/haproxy" />
       <recent name="$PROJECT_DIR$/redis-stat" />
       <recent name="$PROJECT_DIR$/cluster" />
-      <recent name="$PROJECT_DIR$/cluster/roles/disable-iptables" />
-      <recent name="$PROJECT_DIR$/cluster/roles/master/files" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/utils" />
@@ -244,12 +255,12 @@
       <workItem from="1509651155209" duration="173000" />
       <workItem from="1509909190198" duration="21405000" />
       <workItem from="1510010358152" duration="113000" />
-      <workItem from="1510010505531" duration="1047000" />
+      <workItem from="1510010505531" duration="2505000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90293000" />
+    <option name="totallyTimeSpent" value="91751000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="778" extended-state="6" />
@@ -288,79 +299,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/kubernetes/k8s-files/ingress.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kubernetes/roles/base/defaults/main.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cluster/roles/master/files/disable-iptables.sh" />
-    <entry file="file://$PROJECT_DIR$/kubernetes/roles/base/tasks/system.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="80" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cluster/a" />
-    <entry file="file://$PROJECT_DIR$/cluster/get-cluster-config.yml" />
-    <entry file="file://$PROJECT_DIR$/kubernetes/LICENSE">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kubernetes/k8s-files/main.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="32" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kubernetes/roles/node/files/join.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kubernetes/setup.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="10" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kubernetes/reset.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kubernetes/roles/reset-iptables/tasks/main.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="4" lean-forward="true" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kubernetes/roles/master/tasks/main.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="68" lean-forward="false" selection-start-line="7" selection-start-column="68" selection-end-line="7" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kubernetes/nodes.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -401,13 +339,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
           <caret line="36" column="29" lean-forward="true" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kubernetes/roles/reset/tasks/main.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="20" lean-forward="false" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -453,13 +384,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kubernetes/roles/utils/tasks/main.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nginx_cluster/server_nginx.conf" />
     <entry file="file://$PROJECT_DIR$/swarm_cluster/README.md" />
     <entry file="file://$PROJECT_DIR$/grafana/docker-compose.yml">
@@ -484,13 +408,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nginx_cluster/mime.types" />
-    <entry file="file://$PROJECT_DIR$/socket_io/src/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/haproxy/Dockerfile" />
     <entry file="file://$PROJECT_DIR$/socket_io/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
@@ -532,20 +449,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/socket_io/src/client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="31" lean-forward="false" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/master-containers/haproxy.cfg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/redis-stat/docker-compose.yml" />
     <entry file="file://$PROJECT_DIR$/socket_io/k8s/deployment.yaml">
       <provider selected="true" editor-type-id="text-editor">
@@ -562,10 +465,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/master-containers/docker-compose.yml">
+    <entry file="file://$PROJECT_DIR$/utils/update-tmux.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -578,10 +481,154 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/autoupdate.sh">
+    <entry file="file://$PROJECT_DIR$/master-containers/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cluster-start">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/master-containers/haproxy.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="30" column="14" lean-forward="false" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cluster_setup/setup.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cluster_setup/roles/master/defaults/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cluster_setup/roles/master/tasks/copy_keys.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cluster_setup/roles/base/tasks/system.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="56" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cluster_setup/roles/base/tasks/user.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kubernetes/roles/reset/tasks/main.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="20" lean-forward="false" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kubernetes/roles/utils/tasks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kubernetes/roles/update/tasks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cluster_setup/roles/master/tasks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="29" lean-forward="true" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kubernetes/roles/reset-iptables/tasks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="5" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cluster_setup/roles/nodes/tasks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cluster_setup/start-master.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="12" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cluster_setup/start-nodes.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/socket_io/src/client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="31" lean-forward="false" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/socket_io/src/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="21" column="3" lean-forward="false" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/update.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="65" lean-forward="true" selection-start-line="1" selection-start-column="65" selection-end-line="1" selection-end-column="65" />
+          <caret line="1" column="24" lean-forward="false" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
           <folding />
         </state>
       </provider>
