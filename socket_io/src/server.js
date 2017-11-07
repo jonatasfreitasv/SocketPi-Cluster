@@ -33,16 +33,16 @@ io.on('connection', socket => {
 
     socket.on('event', data => {
 
-        const delay_milisecond = (now() - data).toFixed(3);
+        const delay_in_ms = (now() - data).toFixed(3);
 
-        console.log('debug', current_microsecond, parseFloat(data), delay_milisecond);
+        console.log('debug', now(), data, delay_in_ms);
 
         sdc.increment('socketio.events');
-        sdc.timing('socketio.delay', delay_milisecond);
+        sdc.timing('socketio.delay', delay_in_ms);
 
         socket.emit('pong');
 
-        console.log(`Data received in ${delay_milisecond}ms`);
+        console.log(`Data received in ${delay_in_ms}ms`);
 
     });
 
