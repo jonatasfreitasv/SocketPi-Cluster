@@ -1,5 +1,6 @@
 const figlet = require('figlet');
 const socket = require('socket.io-client');
+const now = require("performance-now");
 
 require('dotenv').config();
 
@@ -18,10 +19,8 @@ io.on('connect', function(){
 
     data_interval = setInterval(()=>{
 
-        const current_microsecond = process.hrtime()[0] * 1000000 + process.hrtime()[1] / 1000;
-
-        io.emit('event', current_microsecond);
-        console.log(`Send data in ${current_microsecond}`)
+        io.emit('event', now());
+        console.log(`Send data in ${now()}`)
 
     }, process.env.CLIENT_SEND_DATA_INTERVAL_SECONDS)
 
