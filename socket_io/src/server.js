@@ -30,7 +30,7 @@ io.on('connection', socket => {
     console.log(`Client connected - Number of clients ${Object.keys(io.sockets.sockets).length}`);
     sdc.gaugeDelta('socketio.connected_clients', 1);
 
-    socket.on('event', data => {
+    socket.on('ping', data => {
 
         const end = new Date().getTime() - data;
 
