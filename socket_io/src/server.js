@@ -34,7 +34,7 @@ io.on('connection', socket => {
 
         const current_microsecond = process.hrtime()[0] * 1000000 + process.hrtime()[1] / 1000;
 
-        const delay_milisecond = parseInt((current_microsecond - parseFloat(data)) * 1000);
+        const delay_milisecond = parseInt((current_microsecond - parseFloat(data)) / 1000);
 
         console.log('debug', current_microsecond, parseFloat(data), delay_milisecond);
 
