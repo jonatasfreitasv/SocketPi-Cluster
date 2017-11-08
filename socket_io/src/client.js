@@ -32,6 +32,10 @@ io.on('pong', data => {
     console.log(`Latency from server is ${latency}ms`);
 });
 
+io.on('broadcast', data => {
+    console.log(data);
+});
+
 io.on('disconnect', () => {
     clearInterval(data_interval);
     console.log('Disconected!');
