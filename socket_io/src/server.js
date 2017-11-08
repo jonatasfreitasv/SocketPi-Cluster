@@ -40,12 +40,11 @@ io.on('connection', socket => {
         socket.emit('pong', new Date().getTime());
 
         console.log(`Latency from client is ${latency}ms`);
-        
+
         io.of('/').adapter.clients((err, clients) => {
-            console.log(clients); // an array containing all connected socket ids
+            console.log(clients);
         });
-
-
+        
     });
 
 
