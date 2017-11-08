@@ -41,19 +41,18 @@ io.on('connection', socket => {
 
         console.log(`Latency from client is ${latency}ms`);
 
-        io.of('/').adapter.clients((err, clients) => {
-            console.log(clients);
-        });
-
-        io.of('/').adapter.emit('broadcast', `Broadcast message -> Hi from Socket.io Cluster with Redis on ${new Date()}`);
-
     });
-
 
     socket.on('disconnect', (res)=> {
         console.log(`Client disconnect: ${res}`, ` - Number of clients ${Object.keys(io.sockets.sockets).length}`);
         sdc.gaugeDelta('socketio.connected_clients', -1);
     });
+
+    setInterval(()=>{
+        io.of('/').adapter.clients((err, clients) => {
+            console.log(clients);
+        });
+    }, 1000);
 
 });
 
