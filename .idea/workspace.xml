@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd943a69-f3f5-491f-b25b-e3cabd783090" name="Default" comment="" />
+    <list default="true" id="cd943a69-f3f5-491f-b25b-e3cabd783090" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/socket_io/.env" afterPath="$PROJECT_DIR$/socket_io/.env" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/socket_io/src/server.js" afterPath="$PROJECT_DIR$/socket_io/src/server.js" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -20,8 +23,8 @@
       <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/socket_io/src/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="31" column="52" lean-forward="true" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
+            <state relative-caret-position="339">
+              <caret line="34" column="48" lean-forward="true" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -40,8 +43,8 @@
       <file leaf-file-name=".env" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/socket_io/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+            <state relative-caret-position="150">
+              <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -165,8 +168,8 @@
         <option value="$PROJECT_DIR$/cluster_setup/roles/nodes/tasks/main.yml" />
         <option value="$PROJECT_DIR$/cluster_setup/start-nodes.yml" />
         <option value="$PROJECT_DIR$/socket_io/package.json" />
-        <option value="$PROJECT_DIR$/socket_io/.env" />
         <option value="$PROJECT_DIR$/socket_io/src/client.js" />
+        <option value="$PROJECT_DIR$/socket_io/.env" />
         <option value="$PROJECT_DIR$/socket_io/src/server.js" />
       </list>
     </option>
@@ -224,6 +227,11 @@
               <item name="SocketPi-Cluster" type="b2602c69:ProjectViewProjectNode" />
               <item name="SocketPi-Cluster" type="462c0819:PsiDirectoryNode" />
               <item name="master-containers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SocketPi-Cluster" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SocketPi-Cluster" type="462c0819:PsiDirectoryNode" />
+              <item name="socket_io" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -291,12 +299,12 @@
       <workItem from="1509651155209" duration="173000" />
       <workItem from="1509909190198" duration="21405000" />
       <workItem from="1510010358152" duration="113000" />
-      <workItem from="1510010505531" duration="10004000" />
+      <workItem from="1510010505531" duration="10107000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99250000" />
+    <option name="totallyTimeSpent" value="99353000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="778" extended-state="6" />
@@ -310,7 +318,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24609375" sideWeight="0.5283286" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24609375" sideWeight="0.5283286" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -640,14 +648,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/socket_io/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/socket_io/src/client.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -664,10 +664,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/socket_io/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/socket_io/src/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="31" column="52" lean-forward="true" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
+        <state relative-caret-position="339">
+          <caret line="34" column="48" lean-forward="true" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
           <folding />
         </state>
       </provider>

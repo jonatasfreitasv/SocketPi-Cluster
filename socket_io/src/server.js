@@ -36,7 +36,8 @@ io.on('connection', socket => {
 
         socket.emit('pong', new Date().getTime());
 
-        console.log(`Latency from client is ${latency}ms`);
+        if(process.env.DEBUG)
+            console.log(`Latency from client is ${latency}ms`);
 
     });
 
