@@ -34,7 +34,7 @@ io.on('connect', function(){
 io.on('pong', data => {
     const latency = new Date().getTime() - data;
     sdc.timing('socketio.server_pong_latency', latency);
-    //console.log(`Latency from server is ${latency}ms`);
+    console.log(`Latency from server is ${latency}ms`);
 });
 
 io.on('broadcast', data => {
