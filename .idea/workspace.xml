@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd943a69-f3f5-491f-b25b-e3cabd783090" name="Default" comment="" />
+    <list default="true" id="cd943a69-f3f5-491f-b25b-e3cabd783090" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/socket_io/src/client.js" afterPath="$PROJECT_DIR$/socket_io/src/client.js" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -37,21 +39,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".env" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/socket_io/.env">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+              <caret line="8" column="36" lean-forward="false" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="client.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="client.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/socket_io/src/client.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="16" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+            <state relative-caret-position="450">
+              <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -165,9 +167,9 @@
         <option value="$PROJECT_DIR$/cluster_setup/roles/nodes/tasks/main.yml" />
         <option value="$PROJECT_DIR$/cluster_setup/start-nodes.yml" />
         <option value="$PROJECT_DIR$/socket_io/package.json" />
-        <option value="$PROJECT_DIR$/socket_io/src/client.js" />
         <option value="$PROJECT_DIR$/socket_io/src/server.js" />
         <option value="$PROJECT_DIR$/socket_io/.env" />
+        <option value="$PROJECT_DIR$/socket_io/src/client.js" />
       </list>
     </option>
   </component>
@@ -296,12 +298,12 @@
       <workItem from="1509651155209" duration="173000" />
       <workItem from="1509909190198" duration="21405000" />
       <workItem from="1510010358152" duration="113000" />
-      <workItem from="1510010505531" duration="10305000" />
+      <workItem from="1510010505531" duration="10368000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99551000" />
+    <option name="totallyTimeSpent" value="99614000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="778" extended-state="6" />
@@ -645,14 +647,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/socket_io/src/client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="16" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/master-containers/haproxy.cfg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
@@ -672,7 +666,15 @@
     <entry file="file://$PROJECT_DIR$/socket_io/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+          <caret line="8" column="36" lean-forward="false" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/socket_io/src/client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
           <folding />
         </state>
       </provider>

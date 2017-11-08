@@ -21,7 +21,8 @@ io.on('connect', function(){
         const now = new Date();
 
         io.emit('event', now.getTime());
-        console.log(`Send data on ${now}`)
+
+        //console.log(`Send data on ${now}`)
 
     }, process.env.CLIENT_SEND_DATA_INTERVAL_SECONDS)
 
@@ -29,7 +30,7 @@ io.on('connect', function(){
 
 io.on('pong', data => {
     const latency = new Date().getTime() - data;
-    console.log(`Latency from server is ${latency}ms`);
+    //console.log(`Latency from server is ${latency}ms`);
 });
 
 io.on('broadcast', data => {
