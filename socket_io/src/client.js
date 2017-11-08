@@ -36,7 +36,7 @@ io.on('connect', function(){
 io.on('pong', data => {
 
     let latency = new Date().getTime() - data;
-    latency = latency > 0 ? latency : 0;
+    latency = latency > 0 && latency < 100000 ? latency : 0;
 
     sdc.timing('socketio.server_pong_latency', latency);
 
