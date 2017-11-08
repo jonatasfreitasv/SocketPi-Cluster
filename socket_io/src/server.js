@@ -48,15 +48,15 @@ io.on('connection', socket => {
         sdc.gaugeDelta('socketio.connected_clients', -1);
     });
 
-    setInterval(()=> {
-
-        io.of('/').adapter.clients((err, clients) => {
-            console.log(clients);
-        });
-
-    }, 1000);
-
 });
+
+setInterval(()=> {
+
+    io.of('/').adapter.clients((err, clients) => {
+        console.log(clients);
+    });
+
+}, 1000);
 
 
 server.listen(port, function () {
