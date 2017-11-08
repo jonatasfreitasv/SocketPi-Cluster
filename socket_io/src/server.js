@@ -45,7 +45,7 @@ io.on('connection', socket => {
             console.log(clients);
         });
 
-        io.of('/').adapter.emit('teste');
+        io.of('/').adapter.emit('broadcast', `Hi from Socket.io Cluster with Redis on ${new Date()}`);
 
     });
 
