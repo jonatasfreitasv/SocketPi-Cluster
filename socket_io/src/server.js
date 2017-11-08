@@ -35,7 +35,7 @@ io.on('connection', socket => {
         sdc.increment('socketio.events');
         sdc.timing('socketio.server_ping_latency', latency);
 
-        socket.emit('pong', new Date().getTime());
+        socket.emit('pong', data);
 
         //console.log(`Latency from client is ${latency}ms`);
 
