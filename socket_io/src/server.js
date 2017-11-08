@@ -55,7 +55,7 @@ setInterval(()=>{
 
     });
 
-});
+}, 1000);
 
 app.get('/clients', function (req, res) {
 
