@@ -26,7 +26,7 @@ io.on('connect', function(){
             const now = new Date();
             io.emit('event', now.getTime());
 
-            //console.log(`Send data on ${now}`)
+            console.log(`Send data on ${now}`)
         }
 
     }, 1000)
