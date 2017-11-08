@@ -21,13 +21,15 @@ io.on('connect', function(){
 
     data_interval = setInterval(()=>{
 
-        const now = new Date();
+        for(let i=0; i >= process.env.EVENTS_PER_SECOND;i++)
+        {
+            const now = new Date();
+            io.emit('event', now.getTime());
 
-        io.emit('event', now.getTime());
+            //console.log(`Send data on ${now}`)
+        }
 
-        //console.log(`Send data on ${now}`)
-
-    }, process.env.CLIENT_SEND_DATA_INTERVAL_SECONDS)
+    }, 1000)
 
 });
 
