@@ -26,7 +26,7 @@ io.on('connect', function(){
             const now = new Date();
             io.emit('event', now.getTime());
 
-            console.log(`Send data on ${now}`)
+            //console.log(`Send data on ${now}`)
         }
 
     }, 1000)
@@ -40,7 +40,7 @@ io.on('pong', data => {
 
     sdc.timing('socketio.server_pong_latency', latency);
 
-    console.log(`Latency from server is ${latency}ms`);
+    //console.log(`Latency from server is ${latency}ms`);
 
 });
 
