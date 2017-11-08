@@ -52,9 +52,12 @@ io.on('connection', socket => {
 
 setInterval(()=> {
 
-    io.of('/').adapter.clients((err, clients) => {
-        console.log(clients);
-    });
+    if(io)
+    {
+        io.of('/').adapter.clients((err, clients) => {
+            console.log(clients);
+        });
+    }
 
 }, 1000);
 
