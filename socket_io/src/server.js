@@ -44,7 +44,9 @@ io.on('connection', socket => {
         io.of('/').adapter.clients((err, clients) => {
             console.log(clients);
         });
-        
+
+        io.of('/').adapter.emit('teste');
+
     });
 
 
