@@ -50,8 +50,16 @@ io.on('connection', socket => {
 
 });
 
+setInterval(()=> {
 
+    if(io)
+    {
+        io.of('/').adapter.clients((err, clients) => {
+            console.log(clients);
+        });
+    }
 
+}, 1000);
 
 
 server.listen(port, function () {
