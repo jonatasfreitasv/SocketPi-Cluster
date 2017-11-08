@@ -21,7 +21,7 @@ io.on('connect', function(){
 
     data_interval = setInterval(()=>{
 
-        for(let i=0; i >= process.env.EVENTS_PER_SECOND;i++)
+        for(let i=0; i <= process.env.EVENTS_PER_SECOND;i++)
         {
             const now = new Date();
             io.emit('event', now.getTime());
