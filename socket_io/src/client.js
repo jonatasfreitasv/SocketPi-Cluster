@@ -1,5 +1,8 @@
 const figlet = require('figlet');
 const socket = require('socket.io-client');
+const SDC = require('statsd-client');
+
+let sdc = new SDC({host: process.env.STATSD_HOST || '127.0.0.1', port: process.env.STATSD_PORT || 8125, debug: false});
 
 require('dotenv').config();
 
@@ -30,6 +33,7 @@ io.on('connect', function(){
 
 io.on('pong', data => {
     const latency = new Date().getTime() - data;
+    sdc.timing('socketio.server_pong_latency', latency);
     //console.log(`Latency from server is ${latency}ms`);
 });
 
