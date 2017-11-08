@@ -29,7 +29,8 @@ io.on('connection', socket => {
 
     socket.on('event', data => {
 
-        const latency = new Date().getTime() - data;
+        let latency = new Date().getTime() - data;
+        latency = latency > 0 ? latency : 0;
 
         sdc.increment('socketio.events');
         sdc.timing('socketio.server_ping_latency', latency);
