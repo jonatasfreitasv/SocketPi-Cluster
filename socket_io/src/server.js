@@ -53,7 +53,7 @@ io.on('connection', socket => {
 app.get('/clients', function (req, res) {
 
     io.of('/').adapter.clients((err, clients) => {
-        console.log(clients);
+        res.send(clients);
     });
 
 });
