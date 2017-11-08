@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cd943a69-f3f5-491f-b25b-e3cabd783090" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/socket_io/src/client.js" afterPath="$PROJECT_DIR$/socket_io/src/client.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/socket_io/src/server.js" afterPath="$PROJECT_DIR$/socket_io/src/server.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -295,12 +294,12 @@
       <workItem from="1509651155209" duration="173000" />
       <workItem from="1509909190198" duration="21405000" />
       <workItem from="1510010358152" duration="113000" />
-      <workItem from="1510010505531" duration="7725000" />
+      <workItem from="1510010505531" duration="7728000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96971000" />
+    <option name="totallyTimeSpent" value="96974000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="778" extended-state="6" />
