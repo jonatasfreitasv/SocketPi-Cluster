@@ -14,8 +14,6 @@ let sdc = new SDC({host: process.env.STATSD_HOST || '127.0.0.1', port: process.e
 
 io.adapter(redis({ host: '192.168.0.101', port: 6379, password: 'abc123' }));
 
-sdc.gauge('socketio.connected_clients', 0);
-
 // Health check
 app.head('/health', function (req, res) {
     res.sendStatus(200);
@@ -28,7 +26,6 @@ io.on('error', err => {
 io.on('connection', socket => {
 
     console.log(`Client connected - Number of clients ${Object.keys(io.sockets.sockets).length}`);
-    sdc.gaugeDelta('socketio.connected_clients', 1);
 
     socket.on('event', data => {
 
@@ -45,7 +42,17 @@ io.on('connection', socket => {
 
     socket.on('disconnect', (res)=> {
         console.log(`Client disconnect: ${res}`, ` - Number of clients ${Object.keys(io.sockets.sockets).length}`);
-        sdc.gaugeDelta('socketio.connected_clients', -1);
+    });
+
+});
+
+setInterval(()=>{
+
+    io.of('/').adapter.clients((err, clients) => {
+
+        if(clients)
+            sdc.gauge('socketio.connected_clients', clients.length);
+
     });
 
 });
