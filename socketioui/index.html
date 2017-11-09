@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Title</title>
+
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<section class="section">
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="has-text-centered">
+            <h1><b>SocketPi Cluster</b> - Burn test</h1>
+        </div>
+    </nav>
+
+    <div class="card">
+
+        <header class="card-header">
+            <p class="card-header-title">
+                <i class="fa fa-line-chart" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;status
+            </p>
+        </header>
+
+        <div class="card-content">
+
+            <div class="columns">
+                <div class="column has-text-centered">
+                    <span id="clusterConnection" class="tag is-danger is-medium">Cluster&nbsp;<b>Connection</b></span>
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="column has-text-centered">
+                    <span class="is-fullwidth tag is-dark is-medium">Latency&nbsp;<b><span id="latency">0</span>ms</b></span>
+                </div>
+            </div>
+
+            <div class="columns">
+                <div class="column has-text-centered">
+                    <span class="is-fullwidth tag is-light is-medium"><span id="eventsSent">0</span>&nbsp;<b>events sent</b></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <br>
+
+    <div class="card">
+
+        <header class="card-header">
+            <p class="card-header-title">
+                <i class="fa fa-bolt" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;the power!
+            </p>
+        </header>
+
+        <div class="card-content">
+
+            <div class="columns">
+
+                <div class="column has-text-centered">
+
+                    <a id="stop" class="button is-danger is-shadowless is-hidden">
+                        <span class="icon">
+                            <i class="fa fa-stop-circle" aria-hidden="true"></i>
+                        </span>
+                        <span>Stop burning the cluster</span>
+                    </a>
+
+                    <a id="start" class="button is-success is-shadowless">
+                        <span class="icon">
+                            <i class="fa fa-play-circle" aria-hidden="true"></i>
+                        </span>
+                        <span>Start burning the cluster</span>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="columns has-text-centered">
+
+                <div class="column is-one-fifth">
+
+                    <a id="removeButton" class="button is-light is-shadowless">
+                        <span class="icon">
+                            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                        </span>
+                    </a>
+
+                    &nbsp;&nbsp;<span class="is-size-4" id="eventsPerSecond">1</span>&nbsp;&nbsp;
+
+                    <a id="addButton" class="button is-light is-shadowless">
+                        <span class="icon">
+                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                        </span>
+                    </a>
+
+                    <br>
+
+                    <span class="has-text-grey is-size-7">events per second</span>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<script src="node_modules/socket.io-client/dist/socket.io.js"></script>
+
+<script src="node_modules/jquery/dist/jquery.min.js" ></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
